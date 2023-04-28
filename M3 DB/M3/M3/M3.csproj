@@ -1,0 +1,454 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B03FE93D-4B19-40D4-9007-2389CBAC2255}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M3</RootNamespace>
+    <AssemblyName>M3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddClub.aspx" />
+    <Content Include="AddStadium.aspx" />
+    <Content Include="BlockFan.aspx" />
+    <Content Include="ClubRepAvailableStadiums.aspx" />
+    <Content Include="ClubRepClubInfo.aspx" />
+    <Content Include="AcceptRequests.aspx" />
+    <Content Include="AddMatch.aspx" />
+    <Content Include="AddSportsAssociationManager.aspx" />
+    <Content Include="AddStadiumManager.aspx" />
+    <Content Include="AlreadyPlayedMatches.aspx" />
+    <Content Include="ClubRepresentative.aspx" />
+    <Content Include="ClubRepSendRequest.aspx" />
+    <Content Include="ClubRepUpcomingMatches.aspx" />
+    <Content Include="Fan.aspx" />
+    <Content Include="FanAvailableMatches.aspx" />
+    <Content Include="FanPurchaseTicket.aspx" />
+    <Content Include="RegisterClubRepresentative.aspx" />
+    <Content Include="ClubsNeverPlayed.aspx" />
+    <Content Include="DeleteMatch.aspx" />
+    <Content Include="DeleteClub.aspx" />
+    <Content Include="DeleteStadium.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="RegisterFan.aspx" />
+    <Content Include="RejectRequests.aspx" />
+    <Content Include="SportsAssociationManager.aspx" />
+    <Content Include="StadiumInformation.aspx" />
+    <Content Include="StadiumManager.aspx" />
+    <Content Include="SystemAdmin.aspx" />
+    <Content Include="UpcomingMatches.aspx" />
+    <Content Include="ViewRequests.aspx" />
+    <Content Include="UnblockFan.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddClub.aspx.cs">
+      <DependentUpon>AddClub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddClub.aspx.designer.cs">
+      <DependentUpon>AddClub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddStadium.aspx.cs">
+      <DependentUpon>AddStadium.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddStadium.aspx.designer.cs">
+      <DependentUpon>AddStadium.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BlockFan.aspx.cs">
+      <DependentUpon>BlockFan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlockFan.aspx.designer.cs">
+      <DependentUpon>BlockFan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptRequests.aspx.cs">
+      <DependentUpon>AcceptRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptRequests.aspx.designer.cs">
+      <DependentUpon>AcceptRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMatch.aspx.cs">
+      <DependentUpon>AddMatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMatch.aspx.designer.cs">
+      <DependentUpon>AddMatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSportsAssociationManager.aspx.cs">
+      <DependentUpon>AddSportsAssociationManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSportsAssociationManager.aspx.designer.cs">
+      <DependentUpon>AddSportsAssociationManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddStadiumManager.aspx.cs">
+      <DependentUpon>AddStadiumManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddStadiumManager.aspx.designer.cs">
+      <DependentUpon>AddStadiumManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlreadyPlayedMatches.aspx.cs">
+      <DependentUpon>AlreadyPlayedMatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlreadyPlayedMatches.aspx.designer.cs">
+      <DependentUpon>AlreadyPlayedMatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClubRepAvailableStadiums.aspx.cs">
+      <DependentUpon>ClubRepAvailableStadiums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClubRepAvailableStadiums.aspx.designer.cs">
+      <DependentUpon>ClubRepAvailableStadiums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClubRepClubInfo.aspx.cs">
+      <DependentUpon>ClubRepClubInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClubRepClubInfo.aspx.designer.cs">
+      <DependentUpon>ClubRepClubInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClubRepresentative.aspx.cs">
+      <DependentUpon>ClubRepresentative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClubRepresentative.aspx.designer.cs">
+      <DependentUpon>ClubRepresentative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClubRepSendRequest.aspx.cs">
+      <DependentUpon>ClubRepSendRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClubRepSendRequest.aspx.designer.cs">
+      <DependentUpon>ClubRepSendRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClubRepMaster.Master.cs">
+      <DependentUpon>ClubRepMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClubRepMaster.Master.designer.cs">
+      <DependentUpon>ClubRepMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ClubRepUpcomingMatches.aspx.cs">
+      <DependentUpon>ClubRepUpcomingMatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClubRepUpcomingMatches.aspx.designer.cs">
+      <DependentUpon>ClubRepUpcomingMatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fan.aspx.cs">
+      <DependentUpon>Fan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fan.aspx.designer.cs">
+      <DependentUpon>Fan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FanAvailableMatches.aspx.cs">
+      <DependentUpon>FanAvailableMatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FanAvailableMatches.aspx.designer.cs">
+      <DependentUpon>FanAvailableMatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FanPurchaseTicket.aspx.cs">
+      <DependentUpon>FanPurchaseTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FanPurchaseTicket.aspx.designer.cs">
+      <DependentUpon>FanPurchaseTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FanMaster.Master.cs">
+      <DependentUpon>FanMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FanMaster.Master.designer.cs">
+      <DependentUpon>FanMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterClubRepresentative.aspx.cs">
+      <DependentUpon>RegisterClubRepresentative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterClubRepresentative.aspx.designer.cs">
+      <DependentUpon>RegisterClubRepresentative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClubsNeverPlayed.aspx.cs">
+      <DependentUpon>ClubsNeverPlayed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClubsNeverPlayed.aspx.designer.cs">
+      <DependentUpon>ClubsNeverPlayed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMatch.aspx.cs">
+      <DependentUpon>DeleteMatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteMatch.aspx.designer.cs">
+      <DependentUpon>DeleteMatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClubsNeverPlayed.aspx.cs">
+      <DependentUpon>ClubsNeverPlayed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClubsNeverPlayed.aspx.designer.cs">
+      <DependentUpon>ClubsNeverPlayed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMatch.aspx.cs">
+      <DependentUpon>DeleteMatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteMatch.aspx.designer.cs">
+      <DependentUpon>DeleteMatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteClub.aspx.cs">
+      <DependentUpon>DeleteClub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteClub.aspx.designer.cs">
+      <DependentUpon>DeleteClub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStadium.aspx.cs">
+      <DependentUpon>DeleteStadium.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteStadium.aspx.designer.cs">
+      <DependentUpon>DeleteStadium.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteClub.aspx.cs">
+      <DependentUpon>DeleteClub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteClub.aspx.designer.cs">
+      <DependentUpon>DeleteClub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStadium.aspx.cs">
+      <DependentUpon>DeleteStadium.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteStadium.aspx.designer.cs">
+      <DependentUpon>DeleteStadium.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RejectRequests.aspx.cs">
+      <DependentUpon>RejectRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RejectRequests.aspx.designer.cs">
+      <DependentUpon>RejectRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterFan.aspx.cs">
+      <DependentUpon>RegisterFan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterFan.aspx.designer.cs">
+      <DependentUpon>RegisterFan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMaster.Master.cs">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginMaster.Master.designer.cs">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterMaster.Master.cs">
+      <DependentUpon>RegisterMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterMaster.Master.designer.cs">
+      <DependentUpon>RegisterMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SportsAssociationManager.aspx.cs">
+      <DependentUpon>SportsAssociationManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SportsAssociationManager.aspx.designer.cs">
+      <DependentUpon>SportsAssociationManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SportsAssocManagerMaster.Master.cs">
+      <DependentUpon>SportsAssocManagerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SportsAssocManagerMaster.Master.designer.cs">
+      <DependentUpon>SportsAssocManagerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StadiumInformation.aspx.cs">
+      <DependentUpon>StadiumInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StadiumInformation.aspx.designer.cs">
+      <DependentUpon>StadiumInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StadiumManager.aspx.cs">
+      <DependentUpon>StadiumManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StadiumManager.aspx.designer.cs">
+      <DependentUpon>StadiumManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StadiumManagerMaster.Master.cs">
+      <DependentUpon>StadiumManagerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StadiumManagerMaster.Master.designer.cs">
+      <DependentUpon>StadiumManagerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin.aspx.cs">
+      <DependentUpon>SystemAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin.aspx.designer.cs">
+      <DependentUpon>SystemAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdminMaster.Master.cs">
+      <DependentUpon>SystemAdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemAdminMaster.Master.designer.cs">
+      <DependentUpon>SystemAdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UpcomingMatches.aspx.cs">
+      <DependentUpon>UpcomingMatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpcomingMatches.aspx.designer.cs">
+      <DependentUpon>UpcomingMatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRequests.aspx.cs">
+      <DependentUpon>ViewRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewRequests.aspx.designer.cs">
+      <DependentUpon>ViewRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnblockFan.aspx.cs">
+      <DependentUpon>UnblockFan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnblockFan.aspx.designer.cs">
+      <DependentUpon>UnblockFan.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClubRepMaster.Master" />
+    <Content Include="FanMaster.Master" />
+    <None Include="packages.config" />
+    <Content Include="LoginMaster.Master" />
+    <Content Include="RegisterMaster.Master" />
+    <Content Include="StadiumManagerMaster.Master" />
+    <Content Include="SportsAssocManagerMaster.Master" />
+    <Content Include="SystemAdminMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53125</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
